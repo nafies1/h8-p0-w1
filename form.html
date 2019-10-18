@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Sign Up</title>
+</head>
+<body>
+	<header>
+		<h1>Buat Account Baru!</h1>
+		<h3>Sign Up Form</h3>
+	</header>
+
+	<main>
+		<form action="welcome.html" method="POST">
+		<!-- nama div -->
+			<div>
+				<label for="nama1">First name:</label><br>
+				<input type="text" name="nama1" id="nama1">
+				<br>
+				<label for="nama2">Last name:</label><br>
+				<input type="text" name="nama2" id="nama2"><br><br>
+			</div>
+
+			<!-- gender div -->
+			<div>
+				<label>Gender:</label><br>
+				<input type="radio" name="gender" id="male">
+				<label for="male">Male</label><br>
+				<input type="radio" name="gender" id="female">
+				<label for="female">Female</label><br>
+				<input type="radio" name="gender" id="other">
+				<label for="other">Other</label><br><br>
+			</div>
+
+			<!-- nationality div -->
+			<div>
+				<label for="nationality">Nationality</label><br>
+				<select id="nationality" name="nationality">
+					<!-- malaysian -->
+					<option value="malaysian">Malaysian</option>
+					<!-- indonesian -->
+					<option value="indonesian">Indonesian</option>
+					<!-- other -->
+					<option value="other">Other</option>
+				</select>
+			</div>
+
+			<!-- language div -->
+			<div>
+				<p>Language Spoken:</label><br>
+				<!-- bahasa indo -->
+				<input id="indonesia" name="language" type="checkbox" value="indonesia">          
+				<label for="indonesia">Bahasa Indonesia</label><br>
+				<!-- english -->
+				<input id="english" name="language" type="checkbox" value="english">          
+				<label for="english">English</label><br>
+				<!-- other -->
+				<input id="other1" name="language" type="checkbox" value="other">          
+				<label for="other1">Other</label><br>
+			</div>
+
+			<!-- bio div -->
+			<div>
+				<label for="bio">Bio :</label><br>
+				<textarea id="bio" name="bio" rows="5" cols="30"></textarea>
+			</div>
+
+			<!-- submit  -->
+			<input type="submit" value="Sign Up">
+
+		</form>
+	</main>
+</body>
+</html>
